@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("welcome");
+  res.send("Hello");
 });
 
 app.get("/api/restaurants", (req, res) => {
