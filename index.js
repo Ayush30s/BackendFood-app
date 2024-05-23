@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Hellooo");
+  res.send("Hellooow");
 });
 
 app.get("/api/restaurants", (req, res) => {
