@@ -92,6 +92,7 @@ app.get("/api/restaurants/bodyfirstpart", (req, res) => {
 
  app.get("/api/restaurants/Menu", (req, res) => {
    const { lat, lng , resId} = req.query;
+   console.log(req.query);
    const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}`;
  
     fetch(url, {
